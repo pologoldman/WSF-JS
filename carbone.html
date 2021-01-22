@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carbone.css"> 
+    <link rel="stylesheet" href="font/font.css">
+    <title>Data-Map Natixis</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/plugins/sunburst.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/material.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id="menu_desktop">
+            <a href="index.html" id="logo">
+                <img src="image/logo.png" alt="Logo" class="logo">
+                <img src="image/blob_1.png" alt="Logo_fond" class="fond">
+            </a>
+            <nav role="navigation">
+                <ul id="menu_desktop_box">
+                    <li><a href="#navigateurs">Accueil</a></li>
+                    <li><a href="#about">Quartier</a></li>
+                    <li><a href="#logiciel">Nos engagements</a></li>
+                </ul>
+                <ul id="espace">
+                    <li>
+                        <a href="#">A propos</a>
+                        <a href="">FR</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+
+    </header>
+    <div class="flex-center">
+        <div class="link-box">
+            <a href="#1" id='btn1' class="flex-center " onload="initElement">PASSE </a><p>&#8226</p>
+            <a href="#2" id='btn2' class="flex-center " onload="initElement">PRESENT </a><p>&#8226</p>
+            <a href="#3" id='btn3' class="flex-center " onload="initElement">FUTUR</a>
+        </div>
+        <div class="carrousel box-shadow">
+            <div id="1" class="box flex-center"><img src="image/carbon_passe.png" alt="carbon_passe_1"></div>
+            <div id="2" class="box flex-center"><img src="image/carbon_present.png" alt="carbon_present_1"></div>
+            <div id="3" class="box flex-center"><img src="image/carbon_futur.png" alt="carbon_futur_1"></div>
+        </div>
+    </div>
+    <div class="amchart">
+        <div id="chartdiv"></div>
+        <div class="texteam">
+            <h1>
+                L’évolution du bilan carbone de 2017 à 2019 chez Natixis :
+            </h1>
+            <p>
+                Le bilan carbone 2019 est en baisse compte tenu de plusieurs facteurs :<br>
+                <br>
+                - Une révision du périmètre : les filiales SFS transférées en 2019 chez BPCE ne sont plus prises en compte dans le calcul du bilan carbone Natixis ;<br>
+                - Des modifications de méthodologie de calcul : exclusion des équipements informatiques déjà amortis comptablement;<br>
+                - Une baisse des consommations d’énergie<br>
+                - Une réduction de l’impact des déplacements : prise en compte du télétravail pour les déplacements domicile-travail et baisse des déplacements professionnels en voiture et en avion;<br>
+                - Une diminution significative des émissions de GES liées aux immobilisations informatiques bureautique : Outre le changement méthodologique d’exclusion des équipements informatiques déjà amortis comptablement, on relève 3 vecteurs d’amélioration :<br>
+                - Le remplacement des ordinateurs fixes par des laptops permet de favoriser la mobilité et le travail à distance mais aussi de réduire les consommations énergétiques et les émissions GES ;<br>
+                - La rationalisation du parc d’imprimantes qui a permis de réduire le parc d’imprimantes de 33 % depuis 2017 ;
+                - Le déploiement généralisé de la téléphonie via Internet avec le démantèlement de plus de 28 000 téléphones fixes qui a généré une réduction de 69 % du bilan carbone de la téléphonie en 2019.<br>
+                En complément de cette mesure de l’empreinte carbone directe de Natixis, des démarches ont été entamées concernant les postes significatifs d’émissions de gaz à effet de serre générés du fait de l’activité de Natixis, notamment par l’usage des produits financiers proposés à ses clients: une évaluation de l’impact climat des supports investissements proposés par Natixis a été réalisée dans certains métiers.<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
